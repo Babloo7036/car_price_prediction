@@ -3,7 +3,7 @@
 ## Steps for the project
 1. Data collection and understanding
 2. Performing EDA
-3. Building machine learning model
+3. Train machine learning model
 4. Creating webapp
 5. Deploying webapp
 
@@ -98,11 +98,33 @@ Data Type: Text/String (because of mixed units and formats).
 ## 2. Performing EDA
 In our dataset we have two type of datatype numerical and categorical 
 
-numerical column data = ['year'], ['selling_price'], ['km_driven'], ['seats']
+numerical data column = ['year'], ['selling_price'], ['km_driven'], ['seats']
 
-categorical column data = ['name'], ['fuel'], ['seller_type'], ['transmission'], ['owner'], ['mileage'], ['engine'], ['max_power']
+categorical data column = ['name'], ['fuel'], ['seller_type'], ['transmission'], ['owner'], 
+
+mixed data column =  ['mileage'], ['engine'], ['max_power'], ['torque']
 
 ### Handling null values
 we have missing data columns ['mileage'], ['engine'], ['max_power'], ['seats']
 Its has 2.8% missing data in each column so we can directaly drop them.
+### Handling mixed data
+I am creating fuction to spliting data from space between words
+
+def clean_data(value):
+
+    value = value.split(' ')[0]
+    
+    value = value.strip()
+    
+    if value == '':
+        
+        value = 0
+    
+    return float(value)
+
+### handling categorical data
+replacing numerical numbers to unique values of each column
+
+
+
 
