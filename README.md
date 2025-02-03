@@ -1,7 +1,7 @@
 # SMS Spam Detection
 
 ## Overview
-This project is an SMS Spam Detection system that classifies messages as spam or ham (not spam). The system utilizes extensive text preprocessing techniques and machine learning models to achieve high accuracy. A Streamlit-based web application is developed for user-friendly interaction, and the model is deployed on Render for accessibility.
+This project is predicting old car price on some criteria like manufaturing year, km driven, etc. The system utilizes extensive data preprocessing techniques and machine learning models to achieve high accuracy. A Streamlit-based web application is developed for user-friendly interaction, and the model is deployed on Render for accessibility.
 
 webapp Link - [https://car-price-prediction-2-hw0k.onrender.com]
 
