@@ -28,8 +28,8 @@ Several models were trained and evaluated, with the best-performing model achiev
 
 ## Web Application (Streamlit)
 A Streamlit web application was developed to provide an interactive interface for users to classify SMS messages. The application allows users to:
-- Input an SMS message.
-- Receive a real-time prediction of whether the message is spam or ham.
+- Input car details like menufactured year, no of km driven, fuel type, etc.
+- Receive a real-time prediction of car price.
 
 ## Deployment
 The application was deployed on Render, making it accessible to anyone with an internet connection. The deployment process included:
